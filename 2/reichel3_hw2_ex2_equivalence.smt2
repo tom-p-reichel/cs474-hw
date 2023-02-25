@@ -26,4 +26,8 @@
                    (or q (not q) p)
                    (or q (not r))))))
   (not a!1)))
+; assert the two expressions are equal
+; then take the negation and check for satisfiability
+; if unsat, then the expressions are always equal.
+; (what we wanted)
 (check-sat)
